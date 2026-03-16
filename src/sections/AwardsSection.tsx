@@ -33,23 +33,29 @@ export function AwardsSection() {
             tags={entry.tags}
             links={entry.links}
           >
-            <p className="text-sm leading-7 text-ink-700">
-              Status: <span className="font-medium">{statusCopy[entry.status]}</span>
+            <p className="text-sm leading-7 text-ink-100">
+              <span className="font-semibold text-frost-300">Status:</span>{" "}
+              <span className="font-medium text-white">{statusCopy[entry.status]}</span>
             </p>
-            <p className="text-sm leading-7 text-ink-700">
-              Track: <span className="font-medium text-ink-800">{trackCopy[entry.track]}</span>
+            <p className="text-sm leading-7 text-ink-100">
+              <span className="font-semibold text-frost-300">Track:</span>{" "}
+              <span className="font-medium text-white">{trackCopy[entry.track]}</span>
             </p>
-            <p className="text-sm leading-7 text-ink-700">
-              Challenge: <span className="text-ink-800">{entry.challenge}</span>
+            <p className="text-sm leading-7 text-ink-100">
+              <span className="font-semibold text-frost-300">Challenge:</span>{" "}
+              <span className="text-ink-50">{entry.challenge}</span>
             </p>
-            <p className="text-sm leading-7 text-ink-700">
-              Role: <span className="text-ink-800">{entry.role}</span>
+            <p className="text-sm leading-7 text-ink-100">
+              <span className="font-semibold text-frost-300">Role:</span>{" "}
+              <span className="text-ink-50">{entry.role}</span>
             </p>
-            <p className="text-sm leading-7 text-ink-700">
-              Data: <span className="text-ink-800">{entry.data}</span>
+            <p className="text-sm leading-7 text-ink-100">
+              <span className="font-semibold text-frost-300">Data:</span>{" "}
+              <span className="text-ink-50">{entry.data}</span>
             </p>
-            <p className="text-sm leading-7 text-ink-700">
-              Result: <span className="text-ink-800">{entry.result}</span>
+            <p className="text-sm leading-7 text-ink-100">
+              <span className="font-semibold text-frost-300">Result:</span>{" "}
+              <span className="text-ink-50">{entry.result}</span>
             </p>
           </ItemCard>
         ))}
