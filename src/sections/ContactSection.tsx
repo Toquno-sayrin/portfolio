@@ -14,7 +14,7 @@ export function ContactSection() {
         <p className="text-sm uppercase tracking-[0.2em] text-frost-300">Email</p>
         <a
           href={`mailto:${contactContent.email}`}
-          className="mt-3 block break-all font-serif text-[clamp(2rem,8vw,3rem)] leading-tight"
+          className="mt-3 block text-[clamp(1.1rem,4.4vw,2.2rem)] leading-tight tracking-[-0.03em]"
         >
           {contactContent.email}
         </a>
