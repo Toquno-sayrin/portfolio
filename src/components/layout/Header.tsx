@@ -11,7 +11,7 @@ export function Header() {
     <header className="sticky top-0 z-30 border-b border-ink-200/70 bg-ink-50/90 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
         <a href="#top" className="font-serif text-lg font-semibold tracking-wide text-ink-900">
-          Research Archive
+          정예림(Yearim Jeoung)
         </a>
         <nav className="hidden gap-6 text-sm text-ink-700 md:flex">
           {navItems.map((item) => (
