@@ -4,10 +4,10 @@ const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
 export const heroContent: HeroContent = {
   name: "Yearim Jeoung",
-  title: "데이터 기반 문제해결 인재",
+  title: "Product & Business Data Analyst",
   tagline: "",
   description:
-    "데이터를 통해 문제를 구조화하고, 분석 결과를 의사결정 가능한 인사이트로 연결하는 경험을 쌓고 있습니다.\n수상 및 대회 경험을 중심으로 실전형 분석 역량을 정리했습니다.",
+    "AI 연구와 데이터 분석을 통한 인사이트 도출을 수행하고 있습니다.\n제 주요 연구 및 프로젝트와 진행중인 활동들에 대한 기록을 공유합니다.",
   primaryCta: {
     label: "Projects 보기",
     href: "#projects",
@@ -50,16 +50,20 @@ export const heroContent: HeroContent = {
   ],
   targetRoles: [
     {
-      company: "데이터 분석",
-      roles: ["Product Analyst", "Business Analyst"],
+      company: "쿠팡",
+      roles: ["Growth Analyst", "Product Strategy"],
     },
     {
-      company: "전략 및 기획",
-      roles: ["Data Strategy", "서비스 기획"],
+      company: "토스",
+      roles: ["Data Strategy", "Business Analyst"],
     },
     {
-      company: "문제해결 중심 역할",
-      roles: ["Applied Analytics", "Insight-driven Decision Support"],
+      company: "네이버",
+      roles: ["서비스 기획", "데이터 분석"],
+    },
+    {
+      company: "컨설팅 회사",
+      roles: ["데이터 기반 전략 컨설턴트"],
     },
   ],
 };
