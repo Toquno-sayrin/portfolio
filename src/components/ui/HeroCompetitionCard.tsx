@@ -6,9 +6,9 @@ type HeroCompetitionCardProps = {
 };
 
 const statusLabelMap: Record<CompetitionEntry["status"], string> = {
-  ongoing: "Ongoing",
-  finalist: "Finalist",
-  awarded: "Awarded",
+  ongoing: "진행 중",
+  finalist: "본선",
+  awarded: "수상",
 };
 
 const trackLabelMap: Record<CompetitionEntry["track"], string> = {
@@ -23,7 +23,7 @@ export function HeroCompetitionCard({ index, entry }: HeroCompetitionCardProps) 
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-sm font-semibold tracking-[0.14em] text-ink-500">
-            {String(index + 1).padStart(2, "0")} VALIDATED CASE
+            {String(index + 1).padStart(2, "0")} 검증된 사례
           </p>
           <h3 className="mt-3 font-display text-2xl font-bold leading-tight text-ink-900">
             {entry.title}
@@ -40,10 +40,10 @@ export function HeroCompetitionCard({ index, entry }: HeroCompetitionCardProps) 
       </div>
       <div className="mt-4 space-y-2 text-sm leading-6 text-ink-700">
         <p>
-          <span className="font-semibold text-ink-800">Host:</span> {entry.host}
+          <span className="font-semibold text-ink-800">주최:</span> {entry.host}
         </p>
         <p>
-          <span className="font-semibold text-ink-800">Period:</span> {entry.period}
+          <span className="font-semibold text-ink-800">기간:</span> {entry.period}
         </p>
       </div>
       <p className="mt-4 text-sm leading-7 text-ink-700">{entry.summary}</p>
