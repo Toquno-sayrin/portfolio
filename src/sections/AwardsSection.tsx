@@ -20,7 +20,6 @@ export function AwardsSection() {
       id="awards"
       eyebrow="Validation"
       title="수상 및 문제해결 사례"
-      description="대회, 공모전, 캡스톤 활동을 단순 이력으로 나열하지 않고 어떤 문제를 다뤘고 어떤 방식으로 분석을 설계했는지까지 함께 정리했습니다."
     >
       <div className="grid gap-6 xl:grid-cols-3">
         {competitionData.map((entry) => (

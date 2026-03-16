@@ -25,9 +25,6 @@ export function HeroSection() {
           <div className="mt-6">
             <HeroPhotoCollage images={heroContent.gallery} />
           </div>
-          <p className="mt-5 max-w-2xl whitespace-pre-line text-lg leading-8 text-ink-100">
-            {heroContent.description}
-          </p>
           <ProfileSnapshot content={heroContent} />
         </div>
         <div className="space-y-5 lg:pt-14">
@@ -35,10 +32,6 @@ export function HeroSection() {
             <h2 className="font-display text-3xl font-bold leading-tight text-white">
               수상 및 문제해결 사례
             </h2>
-            <p className="mt-3 text-sm leading-7 text-ink-100">
-              대회와 공모전에서 검증받은 분석 경험을 중심으로, 어떤 문제를 정의하고 어떻게 인사이트로
-              연결했는지 보여줍니다.
-            </p>
           </div>
           <div className="grid gap-5">
             {featuredCompetitions.map((entry, index) => (

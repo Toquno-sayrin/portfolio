@@ -6,8 +6,7 @@ export const heroContent: HeroContent = {
   name: "Yearim Jeoung",
   title: "Product & Business Data Analyst",
   tagline: "",
-  description:
-    "AI 연구와 데이터 분석을 통한 인사이트 도출을 수행하고 있습니다.\n제 주요 연구 및 프로젝트와 진행중인 활동들에 대한 기록을 공유합니다.",
+  description: "",
   primaryCta: {
     label: "Projects 보기",
     href: "#projects",
@@ -108,7 +107,7 @@ export const coreStrengths: CoreStrength[] = [
 ];
 
 export const contactContent: ContactContent = {
-  email: "your.email@example.com",
+  email: "yearim0526.gmail.com",
   location: "Seoul, South Korea",
   links: [
     { label: "GitHub", href: "https://github.com/" },
