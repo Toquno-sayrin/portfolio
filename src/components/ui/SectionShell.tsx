@@ -24,7 +24,9 @@ export function SectionShell({
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-frost-300">
             {eyebrow}
           </p>
-          <h2 className="font-serif text-3xl text-white md:text-4xl">{title}</h2>
+          <h2 className="break-words font-serif text-[clamp(2.4rem,8vw,3.5rem)] leading-tight text-white">
+            {title}
+          </h2>
           {description ? <p className="mt-4 text-base leading-7 text-ink-100">{description}</p> : null}
         </div>
         {children}

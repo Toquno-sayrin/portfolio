@@ -12,7 +12,10 @@ export function ContactSection() {
     >
       <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(135deg,rgba(18,24,38,0.94),rgba(10,15,24,0.9))] p-8 text-ink-50 shadow-paper md:p-10">
         <p className="text-sm uppercase tracking-[0.2em] text-frost-300">Email</p>
-        <a href={`mailto:${contactContent.email}`} className="mt-3 block font-serif text-3xl">
+        <a
+          href={`mailto:${contactContent.email}`}
+          className="mt-3 block break-all font-serif text-[clamp(2rem,8vw,3rem)] leading-tight"
+        >
           {contactContent.email}
         </a>
         <p className="mt-6 text-sm uppercase tracking-[0.2em] text-frost-300">Location</p>
