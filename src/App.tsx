@@ -6,7 +6,7 @@ import { ProjectsSection } from "@/sections/ProjectsSection";
 
 function App() {
   return (
-    <div className="min-h-screen bg-ink-50 text-ink-900">
+    <div className="min-h-screen bg-transparent text-ink-50">
       <Header />
       <main>
         <HeroSection />

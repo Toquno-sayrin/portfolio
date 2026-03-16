@@ -11,7 +11,7 @@ export function HeroPhotoCollage({ images }: HeroPhotoCollageProps) {
         {images.map((image) => (
           <div
             key={image.src}
-            className="overflow-hidden rounded-[28px] border border-ink-200 bg-ink-100 shadow-paper"
+            className="overflow-hidden rounded-[28px] border border-white/10 bg-ink-800 shadow-paper"
           >
             <img
               src={image.src}

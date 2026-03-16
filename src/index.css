@@ -5,8 +5,10 @@
 @tailwind utilities;
 
 :root {
-  color: #1d1c19;
-  background: #f7f7f5;
+  color: #e5ecf7;
+  background:
+    radial-gradient(circle at top, rgba(79, 115, 217, 0.18), transparent 30%),
+    linear-gradient(180deg, #0a0f18 0%, #121826 45%, #0c111a 100%);
   font-family: "Space Grotesk", "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -22,6 +24,9 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(79, 115, 217, 0.18), transparent 30%),
+    linear-gradient(180deg, #0a0f18 0%, #121826 45%, #0c111a 100%);
 }
 
 a {

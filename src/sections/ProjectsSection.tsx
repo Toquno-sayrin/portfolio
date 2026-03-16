@@ -10,7 +10,7 @@ export function ProjectsSection() {
       title="Practical projects focused on structured problem solving"
       description="Projects are presented first to emphasize applied analysis, implementation, and decision-oriented outcomes."
     >
-      <div className="grid gap-6">
+      <div className="grid gap-6 xl:grid-cols-2">
         {projectData.map((entry) => (
           <ProjectCard key={entry.id} entry={entry} />
         ))}

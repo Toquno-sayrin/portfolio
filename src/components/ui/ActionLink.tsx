@@ -7,9 +7,9 @@ type ActionLinkProps = {
 
 export function ActionLink({ item, variant = "inline" }: ActionLinkProps) {
   const variants = {
-    primary: "bg-ink-900 text-white hover:bg-ink-800",
-    secondary: "border border-ink-300 text-ink-900 hover:border-ink-500",
-    inline: "text-ink-700 hover:text-ink-900",
+    primary: "bg-frost-500 text-white hover:bg-frost-400",
+    secondary: "border border-white/20 bg-white/5 text-white hover:border-frost-300 hover:bg-white/10",
+    inline: "text-ink-100 hover:text-white",
   };
 
   return (
