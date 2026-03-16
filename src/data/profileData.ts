@@ -1,5 +1,7 @@
 import type { AboutContent, ContactContent, CoreStrength, HeroContent } from "@/types/content";
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export const heroContent: HeroContent = {
   name: "Yearim Jeoung",
   title: "Product & Business Data Analyst",
@@ -21,15 +23,15 @@ export const heroContent: HeroContent = {
   ],
   gallery: [
     {
-      src: "/images/profile-main.png",
+      src: asset("images/profile-main.png"),
       alt: "Formal portrait of Yearim Jeoung",
     },
     {
-      src: "/images/profile-casual-1.jpg",
+      src: asset("images/profile-casual-1.jpg"),
       alt: "Casual photo of Yearim Jeoung",
     },
     {
-      src: "/images/profile-casual-2.jpg",
+      src: asset("images/profile-casual-2.jpg"),
       alt: "Lifestyle photo of Yearim Jeoung",
     },
   ],
