@@ -31,6 +31,11 @@ export function AwardsSection() {
             meta={entry.host}
             tags={entry.tags}
             links={entry.links}
+            dataPoints={[
+              { label: "Host", value: entry.host },
+              { label: "Period", value: entry.period },
+              { label: "Track", value: trackCopy[entry.track] },
+            ]}
           >
             <p className="text-sm leading-7 text-ink-100">
               <span className="font-semibold text-frost-300">Status:</span>{" "}

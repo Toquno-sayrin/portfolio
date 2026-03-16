@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { HeroPhotoCollage } from "@/components/ui/HeroPhotoCollage";
 import { ProfileSnapshot } from "@/components/ui/ProfileSnapshot";
@@ -7,13 +8,38 @@ import { heroContent } from "@/data/profileData";
 
 export function HeroSection() {
   const featuredCompetitions = competitionData.slice(0, 2);
+  const [spotlight, setSpotlight] = useState({ x: 50, y: 18 });
+
+  const spotlightStyle = useMemo(
+    () => ({
+      background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, rgba(140,184,255,0.22), transparent 24%)`,
+    }),
+    [spotlight],
+  );
+
+  const updateSpotlight = (clientX: number, clientY: number, rect: DOMRect) => {
+    const x = ((clientX - rect.left) / rect.width) * 100;
+    const y = ((clientY - rect.top) / rect.height) * 100;
+
+    setSpotlight({
+      x: Math.max(0, Math.min(100, x)),
+      y: Math.max(0, Math.min(100, y)),
+    });
+  };
 
   return (
     <section
       id="top"
       className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(79,115,217,0.22),transparent_32%),linear-gradient(180deg,rgba(10,15,24,0.92),rgba(10,15,24,0.76))]"
+      onMouseMove={(event) => updateSpotlight(event.clientX, event.clientY, event.currentTarget.getBoundingClientRect())}
+      onTouchMove={(event) => {
+        const touch = event.touches[0];
+        if (!touch) return;
+        updateSpotlight(touch.clientX, touch.clientY, event.currentTarget.getBoundingClientRect());
+      }}
     >
       <div className="pointer-events-none absolute inset-0 bg-grid bg-[size:64px_64px] opacity-40" />
+      <div className="pointer-events-none absolute inset-0 transition duration-300" style={spotlightStyle} />
       <Container className="relative grid gap-14 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-start lg:py-24">
         <div className="max-w-4xl">
           <p className="font-display text-xl font-bold tracking-tight text-frost-300 md:text-2xl">
